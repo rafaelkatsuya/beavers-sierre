@@ -138,6 +138,9 @@
     @media screen and (orientation: portrait) {
         body {
             background-image: url('images/background_portrait.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
         }
     }
 
@@ -161,12 +164,6 @@
         .navbar .btn {
             margin: 5px 10px 5px 10px;
             font-size: 12px;
-        }
-    }
-
-    @supports (-webkit-overflow-scrolling: touch) {
-        body {
-            background-attachment: scroll;
         }
     }
 
