@@ -12,21 +12,27 @@
     <script src="https://kit.fontawesome.com/d28a3c2749.js" crossorigin="anonymous"></script>
 </head>
 <style>
-    body {
-        background-image: url('images/background.jpg');
-        background-size: cover;
-        background-repeat: no-repeat;
-        background-position: center center;
-        background-attachment: scroll;
-        background-color: #453b3a;
-    }
-
     h1 {
         color: white;
     }
     
     h2 {
         margin-bottom: 30px;
+    }
+
+    .background {
+        background-image: url('images/background.jpg');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100vh;
+        width: 100vw;
+        position: fixed;
+        background-color: #453b3a;
+    }
+
+    .content {
+        position: absolute;
     }
 
     .navbar {
@@ -166,6 +172,8 @@
 
 </style>
 <body>
+<div class="background"></div>
+<div class="content">
     <nav class="navbar navbar-light fixed-top justify-content-center">
         <form class="form-inline">
             <a href="#us"><button class="btn btn-outline-light" type="button">BEAVERS</button></a>
@@ -331,6 +339,7 @@
             } // End if
           });
         })
-    </script> 
+    </script>
+</div>
 </body>
 </html> 
